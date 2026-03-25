@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bdlookbook</title>
+
+    <link href="https://cdn.jsdelivr.net/gh/alrin0000/dearflip-jquery-flipbook@master/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/gh/alrin0000/dearflip-jquery-flipbook@master/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body { margin: 0; padding: 0; background-color: #333; }
+        /* This centers the book on screen */
+        #my-book-container {
+            width: 90%;
+            height: 100vh;
+            margin: 5vh auto;
+        }
+        .df-ui-download {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+
+            .df-ui-print {
+        display: none !important;
+    }
+    }
+    </style>
+</head>
+<body>
+
+    <div id="my-book-container">
+        <div class="_df_book" 
+             source="./catalogue.pdf" 
+             webgl="true" 
+             backgroundcolor="#85827e"
+             enableDownload="false"
+             id="portfolio_flipbook">
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alrin0000/dearflip-jquery-flipbook@master/dflip/js/dflip.min.js"></script>
+
+
+</body>
+</html>
